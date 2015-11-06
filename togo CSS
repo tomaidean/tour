@@ -1,0 +1,807 @@
+body{font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",
+                   "メイリオ",Meiryo,Osaka,"MS　Pゴシック","MS PGothic",sans-serif; }
+
+/*上部ボタン　スライド*/
+
+div#header{background: rgba(21,21,21,0.8);
+           width:100%;
+           position: fixed;
+           z-index: 1;
+            }
+
+div#menu{height: 0%;}
+
+div#wrapper {overflow: hidden;
+             width: 100%;
+             padding: 0;
+               }
+ 
+input[type="radio"] {display: none; }
+ 
+div#slideshow {position: relative;
+               width: 100%;
+                 }
+ 
+.slideContents {
+  position: relative;
+  background: black;
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+}
+ 
+.slideContents,
+.slideContents section {
+  width: 100%;
+  height: auto;
+}
+ 
+.slideContents section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: opacity .6s, -webkit-transform .6s;
+  transition: opacity .6s, transform .6s;
+}
+ 
+.slideContents section img {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  padding: 0 50px;
+  vertical-align: middle;
+}
+
+/*文章スタート*/
+
+section#section-vision-intro{
+  padding: 100px 0px 0px 0px;
+  color: #797979;
+  height: 500px;
+ line-height: 75px;
+  }
+
+
+#section-vision-intro h1 {
+  height: 10px;
+  text-align: left;
+  line-height: 75px;
+  color: white;
+  font-size: 70px;
+  font-family: sans-serif;
+  margin-left: 10%;
+}
+#section-vision-intro h2 {
+  height: 40px;
+  text-align: left;
+  color: white;
+  font-size: 40px;
+  margin-left: 10%;
+  
+}
+
+
+/*  ボタン開始  */
+
+
+
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  text-align: left;
+  text-decoration: none;
+  line-height: 74px;
+  outline: none;
+}
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+
+
+
+.button {
+  position: relative;
+  z-index: 2;
+  background-color: #740700;
+  border: 2px solid #740700;
+  color: #fff;
+  line-height: 30px;
+}
+.button:hover {
+  background-color: #333;
+  border-color: #740700;
+  color: #fff;
+  text-decoration: none;
+}
+.button::before,
+.button::after {
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #740700;
+}
+.button::before {
+  right: 0;
+}
+.button::after {
+  left: 0;
+}
+.button:hover::before,
+.button:hover::after {
+  width: 0;
+  background-color: #740700;
+}
+/*  ボタン終わり  */
+ 
+.active {
+  text-align: left;
+  color: white;
+  border-radius: 4px 4px 4px 4px;
+  padding: 0px 0px;
+  margin-left: 10%;
+  }
+
+
+.active h3 {
+  padding: -15px 0px;
+  font-size: 140%;
+}
+
+
+/*ポイント！*/
+
+div#allpoints{display: inline;
+              height: 460px;
+              width: 100%;}
+#point1{float: left;
+        width: 25%;
+        margin-left: 8%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        height: 400px;    }
+
+#point2{float: left;
+        width: 25%;
+        margin-left: 4%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        height: 400px;    }
+
+#point3{float: left;
+        width: 25%;
+        margin-left: 4%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        height: 400px;    }
+
+.point-head{height: 30%;
+            background-color: #ff8c00;
+            float: left;
+            width: 100%;
+             }
+.point-head h2{font-size: 60px;
+  
+               color: white;
+               margin-top: 0%
+               } 
+
+.point-content{height:70%;
+               background-color: #ffebcd;
+               float: left;
+               width: 100%;
+              line-height: 40px;
+            }
+
+.point-content h3{font-size: 70px;
+               color: #666666;
+               margin-top: 20%;
+               text-align: center;} 
+               
+.point-content p{font-size: 20px;
+               color: black;
+               }               
+
+
+/*理念*/
+#aboutbwp{height: 400px;
+          /*本来画像*/
+          float: left;
+          width:100%;
+          color: white;}
+
+#bwptoha{float: left;
+           width: 40%;
+           height: 350px;
+             }
+
+#bwptoha h2{font-size: 60px;
+             text-align: center;
+             margin-left: 10%;
+             margin-top:30%;}
+
+#rinen{float: right;
+       width: 60%;
+       height: 350px;
+       line-height: 20px;}
+
+#rinen h3{font-size: 40px;
+          text-align: center;
+          margin-top: 5%;}
+
+#rinen p{font-size: 30px;
+        text-align: center;
+             }
+
+/*目的*/
+
+#hikouki{float: left;
+          width: 100%;
+          height: 250px;
+         z-index: -1; }
+
+#hikouki-left{float: left;
+          width: 30%;
+          height: 250px;
+          background-color: white;
+            }
+
+#hikouki-left img{width: 100%;
+                  height: 200px;
+                  margin-top: 3%;
+                  margin-left: 2.5%;
+                  position: absolute;}
+
+#hikouki-right{float: left;
+          width: 70%;
+          height: 250px;
+          background-color: #49caaf;
+            }
+
+
+#mokuteki{float: left;
+          width: 100%;
+          height: 450px;
+          }
+
+                
+
+#mokuteki-list{float: left;
+                height: 450px;
+                width: 30%;
+                background-color: white;
+                color:#49caaf;  
+                  }
+
+
+#mokuteki-list h2{font-size:40px;
+                  margin-top: 10%;
+                  margin-left: 10%;}
+
+#mokuteki-come{float: left;
+               height: 450px;
+               width: 70%;
+               background-color: #49caaf;
+               color: white;}  
+
+#mokuteki-come h1{font-size: 75px;
+                 
+                  text-align: center;}    
+
+#mokuteki-come p{font-size: 20px;
+                 margin-top: 3%;
+                 text-align: center;} 
+
+
+/*選ばれるポイント*/ 
+
+section#select-points{display: inline;
+              float: left;
+              height: 650px;
+              width: 100%;
+              color: white;
+              /*本来画像*/
+              background-color: #808080;  }
+
+#point-title{float: left;
+             width: 100%;
+             height: 250px;
+                }
+
+#point-title h1{font-size: 60px;
+                text-align: center;
+                margin-top: 10%;}           
+
+#point-1{float: left;
+        width: 25%;
+        margin-left: 8%;
+        margin-top: 4%;
+        margin-bottom: 3%;
+        text-align: center;
+        height: 350px;
+            
+          }
+
+#point-2{float: left;
+        width: 25%;
+        margin-left: 4%;
+        margin-top: 4%;
+        margin-bottom: 3%;
+        text-align: center;
+        height: 350px;    
+            }
+
+#point-3{float: left;
+        width: 25%;
+        margin-left: 4%;
+        margin-top: 4%;
+        margin-bottom: 3%;
+        text-align: center;
+        height: 350px;    
+           }
+
+
+.point-come{height:400px;
+               float: left;
+               width: 100%;
+              line-height: 25px;
+            }
+
+.point-come h3{font-size: 50px;
+               
+               margin-top: 5%;
+               text-align: center;} 
+               
+.point-come p{font-size: 20px;
+               
+              
+               }               
+
+/*プログラムと費用*/
+
+section#program{height: 1150px;
+                float: left;
+                width: 100%;
+                background-color:#49caaf;}
+
+#program-title{height: 100px;
+               float: left;
+              width: 100%;}  
+
+#program-title h1{font-size: 60px;
+                  color: white;
+                  
+                  text-align: center;}                   
+
+#program-hyou{height: 800px;
+               float: left;
+               width: 100%;
+               }
+
+table , td, th {
+                 border: 1px solid #595959;
+                 border-collapse: collapse;
+                 background-color: #dcdcdc}
+
+table{margin-left: 13%;
+      margin-top: 5%;}
+td, th {padding: 3px;
+        height: 60px;
+          }
+
+ th {background: #191970;}
+
+.even {background: #fbf8f0;}
+
+.odd {background: #fefcf9;}
+
+#program-come{height: 250px;
+               float: left;
+               width: 100%;
+               line-height: 60px; }
+
+#program-come h2{color: #ff3333;
+                 font-size:60px; 
+                 
+                 text-align: center;}
+
+#program-come h3{font-size: 30px;
+                
+                 text-align: center;}
+
+
+/*動画報告*/
+
+
+section#houkoku{width: 100%;
+                float: left;
+                height: 650px;
+                }
+
+#houkoku-title{ width: 100%;
+                float: left;
+                height: 150px;}   
+
+#houkoku-title h1{font-size: 50px;
+                  font-weight: bold;
+                  color: #33ffcc;
+                  text-align: center;}
+
+#douga{width: 100%;
+       float: left;
+       height: 450px;} 
+
+#douga iframe{margin-left: 25%;
+             margin-top: 2%;
+             width:50%;
+             height: 80%;}  
+
+#houkoku-pdf{width: 100%;
+             float: left;
+             height: 50px;
+             margin-bottom: 15px; }
+
+#pdf1{float: left;
+      height: 50px;
+      width: 80px;
+      background-color: red;  
+      margin-left: 2%}
+#pdf1 h2{font-size: 20px;
+         color: white;
+         text-align: center;
+          position: relative;}      
+
+#pdf2{float: left;
+      height: 50px;
+      margin-left: 4%;} 
+
+#pdf2{font-size: 15px;}    
+
+
+
+/*ギャラリー*/      
+
+
+section#gallery{float: left; 
+                width: 100%;
+                height: 800px;
+                background-color:#06836f;
+                  }    
+#gallery-title{float: left; 
+                width: 100%;
+                height: 180px;
+                   }
+#gallery-title h1{color: white;
+                  text-align: center;
+                  font-size: 70px; }                
+
+.gallery-line{float: left; 
+              width: 100%;
+              height: 150px;}
+
+.gallery-image{float: left; 
+                width:  17.5%;
+                height: 86.6%;
+                margin-left:2%;
+                background-color: black;}              
+
+
+
+/*参加者の声*/
+
+
+section#voice{float: left; 
+                width: 100%;
+                height: 700px;
+                background-color:#49caaf; }
+
+#voice-title{float: left; 
+                width: 100%;
+                height: 160px;}
+
+#voice-title h1{color: white;
+                text-align: center;
+                font-size: 70px; }
+
+.voice1-4{float: left; 
+          width: 50%;
+          height: 180px;
+          margin-top: 5%;}
+
+.voice-image{float: left; 
+              width: 25%;
+              height: 180px;
+              margin-left: 5%;
+              /*本来画像*/
+              background-color: blue;
+            　}
+
+.voice-come{float: left; 
+            width: 60%;
+            height: 180px;
+            margin-left: 5%;
+            /*本来画像*/
+           }          
+.voice-come img{position: absolute;
+                width: 30%;
+                height: 180px;}
+.voice-come p{font-size: 15px;
+              text-align: center;
+              position: relative;}                                 
+
+
+
+/*代表からのメッセージ*/ 
+
+section#daihyou{float: left; 
+                width: 100%;
+                height: 600px;
+                background-repeat:no-repeat;}
+
+#daihyou-title{float: left; 
+                width: 97%;
+                height: 114px;
+                margin-top: 6%;}
+
+#daihyou-title h1{font-size: 50px;
+                  text-align: right;
+                  color: white;
+                  margin-right: 3%;}
+
+#daihyou-come{float: left; 
+                width: 93%;
+                height: 450px;
+                line-height: 15px;
+                margin-right: 7%;} 
+
+#daihyou-come p{font-size: 15px;
+                text-align: right;
+                color: white;}
+
+
+
+/*よくある質問*/
+
+section#situmon{float: left; 
+                width: 100%;
+                height: 1400px;
+                background-color:#49caaf ;} 
+
+#situmon-title{float: left; 
+                width: 100%;
+                height: 200px;
+                   }
+#situmon-title h1{color: white;
+                  text-align: center;
+                  font-size: 60px;
+                
+                }
+
+.q-and-a{float: left; 
+         width: 100%;
+         height: 300px;}
+
+.image-q{float: left; 
+         width: 12%;
+         height: 150px;
+         margin-left: 8%;
+         margin-bottom: 100px;
+         /*本来は画像*/
+         background-color: blue;}
+
+.q-come{float: left; 
+         width: 22%;
+         height: 150px;
+         margin-left: 5%;
+         margin-right: 3%;
+         margin-bottom: 100px;
+         /*本来は画像*/
+         }
+.q-come img{position: absolute;
+            width: 25%;
+            height: 180px;}
+
+.q-come p{text-align: center;
+          font-size: 20px;
+          color: white;
+          position: relative;
+          margin-left: 5%;}
+
+.a-come{float: left; 
+         width: 22%;
+         height: 150px;
+         margin-left: 3%;
+         margin-right: 3%;
+         margin-top: 100px;
+         /*本来は画像*/
+         }
+.a-come img{position: absolute;
+            width: 25%;
+            height: 180px;
+            }
+
+.a-come p{text-align: center;
+          font-size: 20px;
+          color: white;
+          margin-left: ;
+          position:relative;}
+
+.image-a{float: left; 
+         width: 12%;
+         height: 150px;
+         margin-right: 8%;
+         margin-top: 100px;
+         /*本来は画像*/
+         background-color: red;}
+
+
+
+/*参加の流れ*/         
+
+section#nagare{float: left; 
+                width: 100%;
+                height: 750px;
+                }
+
+#nagare-title{float: left; 
+              width: 100%;
+              height: 200px;}
+#nagare-title h1{font-size: 70px;
+                 text-align: center;
+                 }
+
+#nagare-box{float: left; 
+              width: 100%;
+              height: 350px;}
+
+.nagare1{float: left;
+         width: 19.3%;
+         height: 350px;
+         background-color: #4cb17c;
+         margin-left: 2%; }
+
+.box-title{float: left;
+           width: 100%;
+           height: 100px;}
+
+.box-title-image{float: left;
+                 width: 20%;
+                 height: 100px;
+                 /*本来は画像*/
+                   }
+
+.box-title-come{float: left;
+                 width: 80%;
+                 height: 100px;}
+.box-title-come h2{font-size: 40px;
+                   text-align: center;}
+
+.box-come{float: left;
+           width: 80%;
+           height: 230px;
+           margin-left: 10%;
+           margin-right: 10%;
+           margin-top: 10px;
+           background-color: white;}
+
+.box-come p{font-size: 25px;
+            text-align: center;}
+
+.nagare-image1{float: left;
+               width: 4%;
+               height: 350px;
+               /*本来は画像*/
+               }
+.nagare-image1 img{height: 22%;
+                   width: 140%;
+                   margin-top: 240%;
+                   position:relative;}
+
+#cancel{float: left; 
+        width: 100%;
+        height: 150px;}
+#cancel h3{font-size: 25px;
+           }
+#cancel h4{font-size: 16px;}
+
+
+/*お申込みフォーム*/
+
+section#mousi{float: left; 
+                width: 100%;
+                height: 1000px;
+                background-color:#ff8410;}
+
+#mousi-title{float: left; 
+              width: 100%;
+              height: 200px;}
+
+#mousi-title h1{font-size: 70px;
+                text-align: center;
+                color: white;}
+
+#mousi-body{float: left; 
+                width: 100%;
+                height: 800px;}
+
+#mousi-content{float: left; 
+                width: 80%;
+                height: 750px;
+                margin-bottom: 50px;
+                margin-left: 10%;
+                background-color: white;}  
+
+
+
+/*最後*/     
+
+
+section#finish{float: left; 
+                width: 100%;
+                height: 300px;
+                background-color:#999999;
+                 }
+
+#finish-logo{float: left; 
+              width: 20%;
+              height: 300px;
+              }
+
+#finish-menu{float: left; 
+              width: 80%;
+              height: 230px;
+              } 
+
+.menu1-3{float: left; 
+          width: 18%;
+          height: 200px;
+          margin-left: 10%;
+          margin-top: 50px;
+          line-height: 50px; }
+
+.menu1-3 h3{font-size: 19px;
+            color: white;
+            text-align: center;}
+
+#finish-mail{float: left; 
+              width: 65%;
+              height: 70px;
+              }
+
+#finish-mail h4{font-size: 16px;
+                color: white;
+                float: left;
+                margin-left: 5%;}
+
+#finish-mail h5{font-size: 11px;
+                float: right;
+                margin-right: 20%;
+                margin-top: 30px;}
+#fbtw{float: left; 
+              width: 15%;
+              height: 70px;
+               }
+#fbtw img{float: left;
+          width: 40%;height: 60%;
+          position: relative;}
+
