@@ -608,8 +608,8 @@ section#situmon{float: left;
          margin-bottom: 100px;
          }
 .image-q h2{font-size: 100px;
-         color: #2c82ba;
-         margin-bottom: 50px;}
+           color: #2c82ba;
+           }
 .q-come{float: left; 
          width: 22%;
          height: 150px;
@@ -655,7 +655,8 @@ section#situmon{float: left;
          margin-left: 6%;
          }
 .image-a h3{font-size: 100px;
-            color: #e94c3c;}
+            color: #e94c3c;
+            margin-bottom: 30%;}
 
 
 /*参加の流れ*/         
@@ -800,10 +801,6 @@ section#finish{float: left;
                 margin-right: 20%;
                 margin-top: 30px;}
 #fbtw{float: left; 
-              width: 15%;
-              height: 70px;
-               }
-#fbtw img{float: left;
-          width: 40%;height: 60%;
-          position: relative;}
-
+      width: 15%;
+      height: 70px;
+      position: absolute;  }
